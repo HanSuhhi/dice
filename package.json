@@ -1,0 +1,42 @@
+{
+  "name": "@hansuhhi-don/dice",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A easy dice & easy use.(Support Currying)",
+  "keywords": [
+    "dice",
+    "currying",
+    "typescript",
+    "dnd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HanSuhhi/dice"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mkdir dist/types && mv dist/main.d.ts dist/types/ && pnpm delete",
+    "preview": "vite preview",
+    "delete": "rm dist/vite.svg"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^18.6.5",
+    "lodash-es": "^4.17.21",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vue-tsc": "^0.38.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dice.umd.cjs",
+  "module": "./dist/dice.js",
+  "typings": "./dist/types/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/dice.js",
+      "require": "./dist/dice.umd.cjs"
+    }
+  }
+}
