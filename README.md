@@ -13,7 +13,7 @@ import roll from "@hansuhhi-don/dice";
 const result1 = roll(2, 6); // Roll 2 dice with a cap of 6
 // will get: {total: 3, numbers: [1, 2]}
 
-const result2 = roll(2, 6); // Roll 2 dice with a cap of 6 also
+const result2 = roll(2)(6); // Roll 2 dice with a cap of 6 also
 // will get: {total: 6, numbers: [4, 2]}
 
 

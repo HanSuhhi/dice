@@ -1,6 +1,6 @@
 {
   "name": "@hansuhhi-don/dice",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "description": "A easy dice & easy use.(Support Currying)",
   "keywords": [
