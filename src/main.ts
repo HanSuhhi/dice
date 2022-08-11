@@ -13,7 +13,7 @@ interface Roll<T1, T2, R> {
 
 type result = {
   total: number;
-  number: number[];
+  numbers: number[];
 };
 
 type roll = Roll<number, number, result>;
